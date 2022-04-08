@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">NEWS Calculator</string>
+    <string name="begin">Begin</string>
+    <string name="additionalInfo">View addition information</string>
+
+    <string name="titleText">Standardising the assessment of acute-illness severity in the NHS</string>
+    <string name="subtitleText">The NEWS is based on a simple aggregate scoring system in which a score is allocated to physiological measurements, already recorded in routine practice, when patients present to, or are being monitored in hospital. Six simple physiological parameters form the basis of the scoring system:</string>
+    <string name="subtitleText2">&#8226; respiration rate</string>
+    <string name="subtitleText3">&#8226; oxygen saturation</string>
+    <string name="subtitleText4">&#8226; systolic blood pressure</string>
+    <string name="subtitleText5">&#8226; pulse rate</string>
+    <string name="subtitleText6">&#8226; level of consciousness or new confusion*</string>
+    <string name="subtitleText7">&#8226; temperature.</string>
+    <string name="subtitleText8">*The patient has new-onset confusion, disorientation and/or agitation, where previously their mental state was normal – this may be subtle. The patient may respond to questions coherently, but there is some confusion, disorientation and/or agitation. This would score 3 or 4 on the GCS (rather than the normal 5 for verbal response), and scores 3 on the NEWS system.</string>
+
+    <string name="moreInfoText">this will be text explaining what will happen when the no information switch is active</string>
+
+    <string name="blank"></string>
+
+    <string name="NEWSLogo">NEWSLogo</string>
+
+    <string name="RCPacknowledgement">Reproduced from: Royal College of Physicians. National Early Warning Score (NEWS) 2: Standardising the assessment of acute-illness severity in the NHS. Updated report of a working party. London: RCP, 2017.</string>
+
+
+    //begin popup
+    <string name="enterData">Enter new data</string>
+    <string name="viewPastData">View past scores</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_data_selection">DataSelection</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="ScoreDetails">Score details... Praesent quis consequat erat, id commodo metus. Mauris a quam mi. Donec sit amet ex tortor. Pellentesque sit amet velit viverra, iaculis dolor tempus, aliquet libero. Ut dictum elit non mi fringilla luctus. Morbi non erat dapibus, dapibus dui at, condimentum ligula. Pellentesque tristique tempor arcu eu bibendum.</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>

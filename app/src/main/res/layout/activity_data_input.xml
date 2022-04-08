@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DataInputActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/DataInputTitleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00BCD4"
+            android:fontFamily="sans-serif-medium"
+            android:padding="5dp"
+            android:text="Enter Patient Data Below"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1400BCD4"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/datainputborder"
+                android:orientation="horizontal"
+                android:padding="1dp"
+                android:textAlignment="viewStart">
+
+                <TextView
+                    android:id="@+id/RespiratoryRateText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="5"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Respiratory Rate"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/RespiratoryRateButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:background="#FFFFFF"
+                    android:onClick="openDataSelectionPage"
+                    android:text="..."
+                    android:textColor="#000000"
+                    app:backgroundTint="#E6E6E6"
+                    app:backgroundTintMode="screen" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/datainputborder"
+                android:orientation="horizontal"
+                android:padding="1dp">
+
+                <TextView
+                    android:id="@+id/OxygenSaturationText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Oxygen Saturation"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/OxygenTypeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:textStyle="italic" />
+
+                <Button
+                    android:id="@+id/OxygenSaturationButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:background="#FFFFFF"
+                    android:onClick="openDataSelectionPage"
+                    android:text="..."
+                    android:textColor="#000000"
+                    app:backgroundTint="#E6E6E6"
+                    app:backgroundTintMode="screen" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/datainputborder"
+                android:orientation="horizontal"
+                android:padding="1dp">
+
+                <TextView
+                    android:id="@+id/TemperatureText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Temperature"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/TemperatureButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:background="#FFFFFF"
+                    android:onClick="openDataSelectionPage"
+                    android:text="..."
+                    android:textColor="#000000"
+                    app:backgroundTint="#E6E6E6"
+                    app:backgroundTintMode="screen" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/datainputborder"
+                android:orientation="horizontal"
+                android:padding="1dp">
+
+                <TextView
+                    android:id="@+id/HeartRateText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Heart Rate"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/HeartRateButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:background="#FFFFFF"
+                    android:onClick="openDataSelectionPage"
+                    android:text="..."
+                    android:textColor="#000000"
+                    app:backgroundTint="#E6E6E6"
+                    app:backgroundTintMode="screen" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/datainputborder"
+                android:orientation="horizontal"
+                android:padding="1dp">
+
+                <TextView
+                    android:id="@+id/SystolidBPText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Systolic BP"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/SystolicBPButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:background="#FFFFFF"
+                    android:onClick="openDataSelectionPage"
+                    android:text="..."
+                    android:textColor="#000000"
+                    app:backgroundTint="#E6E6E6"
+                    app:backgroundTintMode="screen" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/datainputborder"
+                android:orientation="horizontal"
+                android:padding="1dp">
+
+                <TextView
+                    android:id="@+id/ConciousnessLevelText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Consciousness Level"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/ConciousnessLevelButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:background="#FFFFFF"
+                    android:onClick="openDataSelectionPage"
+                    android:text="..."
+                    android:textColor="#000000"
+                    app:backgroundTint="#E6E6E6"
+                    app:backgroundTintMode="screen" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/datainputborder"
+                android:padding="1dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/OxygenSupplementText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Oxygen Supplement"
+                    android:textSize="24sp" />
+
+                <ToggleButton
+                    android:id="@+id/OxygenSupplementButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:background="#FFFFFF"
+                    android:onClick="setOxyToggle"
+                    android:text="..."
+                    android:textColor="#000000"
+                    android:textOff="no"
+                    android:textOn="yes"
+                    app:backgroundTint="#E6E6E6"
+                    app:backgroundTintMode="screen" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/calculateButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="calculateNews"
+                android:text="Calculate and continue"
+                app:backgroundTint="#00BCD4" />
+
+            <TextView
+                android:id="@+id/dataEntryInformationText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:text="Enter data by pressing the buttons to the right of the selection."
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

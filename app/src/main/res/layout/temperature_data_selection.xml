@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tempDataTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Temperature (Celsius)"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/tempButton0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="DataButtonPress"
+            android:text=">= 39.1"
+            app:backgroundTint="#00BCD4" />
+
+        <Button
+            android:id="@+id/tempButton1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="DataButtonPress"
+            android:text="39.0 - 38.1"
+            app:backgroundTint="#00BCD4" />
+
+        <Button
+            android:id="@+id/tempButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="DataButtonPress"
+            android:text="38.0 - 36.1"
+            app:backgroundTint="#00BCD4" />
+
+        <Button
+            android:id="@+id/tempButton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="DataButtonPress"
+            android:text="36.0 - 35.1"
+            app:backgroundTint="#00BCD4" />
+
+        <Button
+            android:id="@+id/tempButton4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="DataButtonPress"
+            android:text="&lt;= 35"
+            app:backgroundTint="#00BCD4" />
+
+        <TextView
+            android:id="@+id/infoTextHR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select the correct temperture above" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

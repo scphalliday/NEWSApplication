@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tempDataTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Heart Rate (bpm)"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/hrButton0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="DataButtonPress"
+            android:text=">= 131"
+            app:backgroundTint="#00BCD4" />
+
+        <Button
+            android:id="@+id/hrButton1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="DataButtonPress"
+            android:text="130 - 111"
+            app:backgroundTint="#00BCD4" />
+
+        <Button
+            android:id="@+id/hrButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="DataButtonPress"
+            android:text="110 - 91"
+            app:backgroundTint="#00BCD4" />
+
+        <Button
+            android:id="@+id/hrButton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="DataButtonPress"
+            android:text="90 - 51"
+            app:backgroundTint="#00BCD4" />
+
+        <Button
+            android:id="@+id/hrButton4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="DataButtonPress"
+            android:text="50 - 41"
+            app:backgroundTint="#00BCD4" />
+
+        <Button
+            android:id="@+id/hrButton5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="DataButtonPress"
+            android:text="&lt;= 40"
+            app:backgroundTint="#00BCD4" />
+
+        <TextView
+            android:id="@+id/infoTextHR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select the correct heart rate above" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
